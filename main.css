@@ -1,0 +1,68 @@
+html {
+	text-align: center;
+	margin: 3rem 3rem 0rem 3rem;
+	font-family: 'Indie Flower', cursive;
+}
+
+h1 {
+	font-size: 3rem;
+}
+
+#logos {
+	display: inline-block;
+}
+
+#logos img {
+	max-width: 250px;
+	min-width: 70px;
+	height: auto;
+}
+
+#description {
+	font-size: 1.4rem;
+}
+
+#poster {
+	background-color: black;
+	color: white;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "Times New Roman", Times, serif;
+	padding: 2rem;
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+}
+
+#image {
+	border: 3px solid #c0a2d6;
+}
+
+#keyword {
+	padding: none;
+	margin-top: 0rem;
+}
+
+#keyword h3 {
+	text-transform: uppercase;
+	font-size: 5rem;
+	color: #c0a2d6;
+	letter-spacing: 2rem;
+	line-height: 0.1em; /* this is not working how i want */
+}
+
+#textbox p {
+	font-variant: small-caps;
+	font-size: 1.2rem;
+}
+
+#quote-date p {
+	text-align: right;
+	font-size: 0.7rem;
+	font-style: italic;
+}
+
+footer {
+	text-align: left;
+	font-size: 0.8rem;
+}

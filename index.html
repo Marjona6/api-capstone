@@ -2,44 +2,39 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Library of Congress API (test)</title>
-    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
-
-    <script type="text/javascript">
-        $(document).ready(function () {
-            
-            /* Update all the parameters for your API test*/
-            var params = {
-                
-            };
-            var result = $.ajax({
-                type: "GET",
-                /* update API end point */
-                url: "http://loc.gov/pictures/",
-                dataType: "json",
-                data: {
-                    fo: 'json',
-                    q: 'astronauts'
-                }
-            })
-            /* if the call is successful (status 200 OK) show results */
-            .done(function (result) {
-                /* if the results are meeningful, we can just console.log them */
-                console.log(result);
-            })
-            /* if the call is NOT successful show errors */
-            .fail(function (jqXHR, error, errorThrown) {
-                console.log(jqXHR);
-                console.log(error);
-                console.log(errorThrown);
-            });
-        });
-    </script>
-
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Montserrat" rel="stylesheet">
+    <title>Motivational Poster Maker</title>
 </head>
 
 <body>
-    <p>There is nothing to see here. Please check your console log instead</p>
+    <h1>Tronald Library of Congress Dump:</h1>
+    <h2>Motivational Poster Maker</h2>
+    <section id="logos">
+        <img src="img/loc-logo.jpg" alt="Library of Congress logo">
+        <img src="img/tronalddump.png" alt="Tronald Dump logo">
+    </section>
+    <p id="description">Create a motivational poster from any search term. Images provided by the Library of Congress; "inspirational" quotes provided by Donald J. Trump.</p>
+    <section id="poster">
+        <div id="image">
+            <img alt="ARC in North Russia" src="img/russia-example.jpg">
+        </div>
+        <div id="keyword">
+            <h3>Russia</h3>
+        </div>
+        <div id="textbox">
+            <p>Crooked Hillary has zero imagination and even less stamina. ISIS, China, Russia and all would love for her to be president. 4 more years!</p>
+        </div>
+        <div id="quote-date">
+            <p>May 20th, 2016</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&#xa9; 2017 Meryem Yanar. <a href="https://github.com/Marjona6">GitHub</a> </p>
+    </footer>
+    <script src="app.js" type="text/javascript"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
 </body>
 
 </html>
